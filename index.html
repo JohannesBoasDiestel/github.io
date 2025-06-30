@@ -5,33 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voddev - App & Game Development | 3D Assets</title>
     
-    <!-- Google Font: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- NEW/EDITED: Link to your external CSS file -->
+    
+    <!-- Link to your external CSS file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- Dynamic Background Element -->
     <div id="background-animation"></div>
 
     <header>
         <div class="container">
-            <!-- NEW/EDITED: Link points to the home page -->
             <a href="index.html" class="logo">VODDEV</a>
-            
-            <!-- This navigation will be dynamically updated by js/main.js -->
-            <!-- The content below is the default for a logged-out user -->
-            <nav>
-                <a href="login.html">Log In</a>
-                <a href="signup.html" class="btn-nav-signup">Sign Up</a>
-            </nav>
+            <!-- This nav is populated by js/main.js -->
+            <nav></nav>
         </div>
     </header>
 
@@ -53,25 +42,20 @@
             <div class="container">
                 <h2>What We Do</h2>
                 <div class="features-grid">
-                    <!-- Feature 1: App Development -->
                     <div class="feature-card">
                         <div class="icon"><i class="fas fa-mobile-alt"></i></div>
                         <h3>Custom App Development</h3>
                         <p>From sleek iOS to versatile Android apps, we build responsive, user-centric mobile applications that perform flawlessly and look stunning.</p>
                     </div>
-
-                    <!-- Feature 2: Game Development -->
                     <div class="feature-card">
                         <div class="icon"><i class="fas fa-gamepad"></i></div>
                         <h3>Immersive Game Creation</h3>
-                        <p>Leveraging Unreal Engine and Unity, we develop engaging games with Teranox Games Studios for PC, console, and mobile, focusing on compelling gameplay and breathtaking visuals.</p>
+                        <p>Leveraging Unreal Engine and Unity, we develop engaging games with Teranox Games Studios for PC, console, and mobile.</p>
                     </div>
-                    
-                    <!-- Feature 3: 3D Asset Store -->
                     <div class="feature-card">
                         <div class="icon"><i class="fas fa-cubes"></i></div>
                         <h3>High-Fidelity 3D Assets</h3>
-                        <p>Explore our curated marketplace of game-ready 3D models, environments, and props, optimized for performance without sacrificing quality.</p>
+                        <p>Explore our curated marketplace of game-ready 3D models, environments, and props, optimized for performance.</p>
                     </div>
                 </div>
             </div>
@@ -100,56 +84,29 @@
             <div class="container">
                 <h2>Featured Videos</h2>
                 <div class="video-container">
-                    <!-- Video 1 -->
                     <div class="video-wrapper">
-                        <!-- EDIT HERE: Replace the src with your YouTube embed link -->
-                        <iframe 
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    
-                    <!-- Video 2 -->
                     <div class="video-wrapper">
-                        <!-- EDIT HERE: Replace the src with your YouTube embed link -->
-                        <iframe 
-                            src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/Cjhl25Y0M-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://sketchfab.com/Teranox1" target="_blank" rel="noopener noreferrer" aria-label="Sketchfab">
-                <i class="fab fa-sketchfab"></i>
-            </a>
-
-            <a href="https://www.patreon.com/Teranox" target="_blank" rel="noopener noreferrer" aria-label="Patreon">
-                <i class="fab fa-patreon"></i>
-            </a>
-
-            <a href="https://www.instagram.com/Teranoxx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
-        <p>© 2024 Voddev. All Rights Reserved.</p>
+                <a href="https://sketchfab.com/Teranox1" target="_blank" rel="noopener noreferrer" aria-label="Sketchfab"><i class="fab fa-sketchfab"></i></a>
+                <a href="https://www.patreon.com/Teranox" target="_blank" rel="noopener noreferrer" aria-label="Patreon"><i class="fab fa-patreon"></i></a>
+                <a href="https://www.instagram.com/Teranoxx" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© 2024 Voddev. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- NEW/EDITED: Link to your main JavaScript file -->
+    <!-- Link to your main JavaScript file -->
     <script src="js/main.js" defer></script>
-
 </body>
 </html>
