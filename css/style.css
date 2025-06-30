@@ -43,7 +43,7 @@ h2::after {
     margin: 10px auto 0; border-radius: 2px;
 }
 
-/* --- HEADER --- */
+/* --- HEADER & NAVIGATION --- */
 header {
     position: fixed; top: 0; width: 100%; padding: 20px 0; z-index: 100;
     background: rgba(13, 13, 18, 0.8);
@@ -77,9 +77,14 @@ nav a:hover { color: #fff; }
 .btn-secondary { background-color: transparent; border-color: var(--border-color); }
 .btn-secondary:hover { background-color: var(--card-bg); border-color: var(--secondary-glow); }
 
-/* --- FEATURES & SHOWCASE --- */
-.features-grid, .showcase-grid, .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-.feature-card { background: var(--card-bg); padding: 30px; border-radius: 10px; border: 1px solid var(--border-color); transition: all 0.3s ease; text-align: left; }
+/* --- FEATURES, SHOWCASE, DASHBOARD GRIDS --- */
+.features-grid, .showcase-grid, .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+.feature-card { background: var(--card-bg); padding: 30px; border-radius: 10px; border: 1px solid var(--border-color); transition: all 0.3s ease; }
 .feature-card:hover { transform: translateY(-10px); border-color: var(--primary-glow); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
 .feature-card .icon {
     font-size: 2.5rem; margin-bottom: 20px;
@@ -113,7 +118,7 @@ footer { padding: 40px 0; text-align: center; border-top: 1px solid var(--border
 .social-links a:hover { color: var(--secondary-glow); }
 footer p { margin-top: 20px; color: var(--text-muted); }
 
-/* --- FORM & DASHBOARD STYLES --- */
+/* --- FORM & DASHBOARD SPECIFIC STYLES --- */
 .form-page-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 100px 20px; }
 .form-wrapper {
     width: 100%; max-width: 450px; background: var(--card-bg); padding: 40px; border-radius: 10px;
@@ -131,10 +136,11 @@ footer p { margin-top: 20px; color: var(--text-muted); }
 .form-wrapper .btn-primary { width: 100%; padding: 15px; font-size: 1.1rem; }
 .form-wrapper p { margin-top: 20px; color: var(--text-muted); }
 .form-wrapper p a { color: var(--secondary-glow); text-decoration: none; font-weight: 600; }
+
 .pdf-item {
     background: var(--card-bg); border: 1px solid var(--border-color); padding: 25px;
     border-radius: 8px; display: flex; align-items: center; gap: 20px;
-    text-decoration: none; color: var(--text-color); transition: all 0.3s ease; text-align: left;
+    text-decoration: none; color: var(--text-color); transition: all 0.3s ease;
 }
 .pdf-item:hover { transform: translateY(-5px); border-color: var(--primary-glow); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
 .pdf-item .icon { font-size: 2.5rem; color: var(--primary-glow); }
