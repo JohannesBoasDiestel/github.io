@@ -43,10 +43,17 @@ npm install
      3. Go to Security > App passwords
      4. Generate a new app password for this application
 
-4. Add your media files:
+4. Add your media files (two options):
+
+   **Option A: Manual upload to folders**
    - Place video files (.mp4) in `assets/videos/`
    - Place FBX files in `assets/fbx/`
    - Place EXE files in `assets/exe/`
+
+   **Option B: Use the web upload interface**
+   - Start the server and log in
+   - Navigate to the Upload page (available in the menu when logged in)
+   - Upload files through the web interface (supports up to 200MB per file)
 
 ### Running the Application
 
@@ -84,6 +91,7 @@ github.io/
 ├── login.html          # Login page
 ├── signup.html         # Signup page
 ├── dashboard.html      # User dashboard
+├── upload.html         # File upload page
 ├── server.js           # Backend server
 ├── package.json        # Node.js dependencies
 └── README.md          # This file
@@ -114,6 +122,13 @@ github.io/
 ### 5. Email Notifications
 - Automatic email sent to TeranoxGames@Gmail.com when new users register
 - Includes username, email, and registration timestamp
+
+### 6. File Upload System
+- Web-based upload interface for videos, FBX files, and EXE files
+- Supports files up to 200MB
+- Real-time upload progress tracking
+- Protected by authentication - only logged-in users can upload
+- Automatic file organization into correct folders
 
 ## Important Notes
 

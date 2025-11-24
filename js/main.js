@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (isLoggedIn) {
             nav.innerHTML = `
                 <a href="dashboard.html">Dashboard</a>
+                <a href="upload.html">Upload</a>
                 <a href="#" id="logout-btn" class="btn-nav-signup">Log Out</a>
             `;
         } else {
