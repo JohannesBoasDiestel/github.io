@@ -7,7 +7,7 @@ const multer = require('multer');
 const session = require('express-session');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -17,18 +17,21 @@ app.use(express.static('.'));
 
 // Session configuration
 app.use(session({
-    secret: 'voddev-secret-key-2024',
+    secret: process.env.SESSION_SECRET || 'voddev-secret-key-2024',
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: false } // Set to true if using HTTPS
+    cookie: {
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
+    }
 }));
 
 // Email configuration
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'your-email@gmail.com', // Replace with your email
-        pass: 'your-app-password' // Replace with your app password
+        user: process.env.EMAIL_USER || 'your-email@gmail.com',
+        pass: process.env.EMAIL_PASS || 'your-app-password'
     }
 });
 

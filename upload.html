@@ -195,7 +195,9 @@
 
     <script src="js/main.js" defer></script>
     <script>
-        const API_URL = 'http://localhost:3000/api';
+        const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:3000/api'
+            : 'https://voddev-backend.onrender.com/api';
 
         function setupUpload(type) {
             const fileInput = document.getElementById(`${type}-file`);

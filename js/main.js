@@ -1,5 +1,7 @@
-// API Base URL
-const API_URL = 'http://localhost:3000/api';
+// API Base URL - automatically detects environment
+const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:3000/api'
+    : 'https://voddev-backend.onrender.com/api'; // Update this after deployment
 
 // Wait for the DOM to be fully loaded before running scripts
 document.addEventListener('DOMContentLoaded', async () => {
