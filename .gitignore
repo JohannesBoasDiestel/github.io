@@ -35,8 +35,9 @@ assets/videos/*.ogg
 assets/fbx/*.fbx
 assets/exe/*.exe
 
-# Exception: Allow CombatTest35 (under 100MB GitHub limit)
+# Exception: Allow videos under 100MB GitHub limit
 !assets/videos/CombatTest35.mp4
+!assets/videos/PromoVid1.mp4
 
 # Keep directory structure
 !assets/videos/.gitkeep
