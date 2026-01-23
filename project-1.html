@@ -11,6 +11,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* ───────────────────────────────────────────────
+           Image containment & centering fixes
+        ─────────────────────────────────────────────── */
+
+        /* Prevent anything from breaking layout */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Hero image - full width but never too tall */
+        .project-image-hero {
+            overflow: hidden;
+            margin: 2rem 0;
+            border-radius: 12px;
+            background: #0a0a0a;
+            max-height: 80vh;
+        }
+
+        .project-image-hero img {
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+            object-fit: cover;          /* crops if too tall/wide — keeps focus centered */
+            object-position: center;
+        }
+
+        /* Gallery - clean grid + uniform look */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            background: #111;
+            aspect-ratio: 4 / 3;       /* you can change to 16/9, 3/2, 1/1 etc. */
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;          /* fills frame, crops edges if needed */
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Optional: nicer hover effect */
+        .gallery-item:hover img {
+            transform: scale(1.06);
+            transition: transform 0.4s ease;
+        }
+
+        /* Center single images if needed (fallback) */
+        .project-image-hero,
+        .gallery-item {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Video wrapper - also safe */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #000;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     
@@ -30,27 +118,35 @@
                 <div class="project-meta">
                     <span><strong>Role:</strong> Lead Developer</span>
                     <span><strong>Technologies:</strong> Unreal Engine, C++, Blender</span>
-                    <span><strong>Date:</strong> =July 2021</span>
+                    <span><strong>Date:</strong> July 2021</span> <!-- fixed typo: =July → July -->
                 </div>
+
                 <div class="project-image-hero">
                     <img src="assets/images/VodBottom.png" alt="Cover image">
                 </div>
+
                 <div class="project-description">
                     <h3>About the Project</h3>
                     <p>
                         VOD is a story based Souls-like RPG game, designed with immersive NPC interactions, and an unforgiving combat system. Immerse yourself in the world of characters and stories, and experience the unraveling of the world within.
                     </p>
                     <p>
-                       Set in a time where humankind has become subservient to the Dragons which rule from the void, prophecy foretells a reckoning draws nigh, a vessel is born, a bridge from the Abyss into the world of humankind. 
+                        Set in a time where humankind has become subservient to the Dragons which rule from the void, prophecy foretells a reckoning draws nigh, a vessel is born, a bridge from the Abyss into the world of humankind. 
                     </p>
                 </div>
 
                 <div class="project-gallery">
                     <h3>Project Gallery</h3>
                     <div class="gallery-grid">
-                        <div class="gallery-item"><img src="assets/images/NirreannahYelling2.png" alt="Gallery Image 1"></div>
-                        <div class="gallery-item"><img src="assets/images/Scenery.png" alt="Gallery Image 2"></div>
-                        <div class="gallery-item"><img src="assets/images/placeholder-gallery-3.png" alt="Gallery Image 3"></div>
+                        <div class="gallery-item">
+                            <img src="assets/images/NirreannahYelling2.png" alt="Gallery Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/images/Scenery.png" alt="Gallery Image 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/images/placeholder-gallery-3.png" alt="Gallery Image 3">
+                        </div>
                     </div>
                 </div>
 
