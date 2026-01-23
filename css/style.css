@@ -103,6 +103,21 @@ nav a:hover { color: #fff; }
 }
 .showcase-item:hover .overlay { opacity: 1; }
 
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* --- VIDEO SECTION --- */
 .video-container { max-width: 850px; margin: 40px auto 0; display: flex; flex-direction: column; gap: 30px; }
 .video-wrapper {
