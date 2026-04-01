@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- SLIDESHOW ---
     const SLIDES = [
-        { src: 'assets/images/VodWallpaper.png',           label: 'VOD — Souls-like RPG',        href: 'project-1.html' },
-        { src: 'assets/images/AriaAren_Lightning_Girl.png', label: 'Aria Aren — Character Art',   href: 'project-1.html' },
-        { src: 'assets/images/City1.png',                   label: 'City Environment',             href: 'project-1.html' },
-        { src: 'assets/images/NirreannahYelling2.png',      label: 'Nirreannah — Character',       href: 'project-1.html' },
-        { src: 'assets/images/Outdoors1.png',               label: 'Outdoor Scene',                href: 'project-1.html' },
-        { src: 'assets/images/Scenery.png',                 label: 'Environment Concept',          href: 'project-1.html' },
-        { src: 'assets/images/3D3-ult.png',                 label: 'High-Fidelity 3D Assets',      href: 'project-3.html' },
-        { src: 'assets/images/3D1.png',                     label: '3D Asset Showcase',            href: 'project-3.html' },
-        { src: 'assets/images/VodBottom.png',               label: 'VOD — World Art',              href: 'project-1.html' },
-        { src: 'assets/images/TeranoxLogo.png',             label: 'GalaxyWord — Language App',   href: 'project-2.html' },
+        { src: 'assets/images/VOD_WP_1.png',           label: 'VOD — Souls-like RPG',        href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_2.png', label: 'Aria Aren — Character Art',   href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_3.png',                   label: 'City Environment',             href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_4.png',      label: 'Nirreannah — Character',       href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_5.png',               label: 'Outdoor Scene',                href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_6.png',                 label: 'Environment Concept',          href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_7.png',                 label: 'High-Fidelity 3D Assets',      href: 'project-3.html' },
+        { src: 'assets/images/VOD_SC_1.png',                     label: '3D Asset Showcase',            href: 'project-3.html' },
+        { src: 'assets/images/VOD_SC_2.png',               label: 'VOD — World Art',              href: 'project-1.html' },
+        { src: 'assets/images/VOD_SC_3.png',             label: 'GalaxyWord — Language App',   href: 'project-2.html' },
     ];
 
     const N = SLIDES.length;
