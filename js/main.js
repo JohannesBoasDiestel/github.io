@@ -14,14 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const SLIDES = [
         { src: 'assets/images/SOTV1.png',           label: 'VOD — World Art',        href: 'project-1.html' },
         { src: 'assets/images/SOTV2.png', label: 'VOD — World Art',   href: 'project-1.html' },
-        { src: 'assets/images/VOD_WP_3.png',                   label: 'VOD — World Art',             href: 'project-1.html' },
-        { src: 'assets/images/VOD_WP_4.png',      label: 'VOD — World Art',       href: 'project-1.html' },
-        { src: 'assets/images/VOD_WP_1.png',               label: 'VOD — World Art',                href: 'project-1.html' },
+        { src: 'assets/images/Nirreannah.png',                   label: 'Character Art',             href: 'project-1.html' },
+        { src: 'assets/images/NirreannahCharacterSheet.png',               label: 'Character Art',                href: 'project-1.html' },
         { src: 'assets/images/VOD_WP_6.png',                 label: 'VOD — World Art',          href: 'project-1.html' },
-        { src: 'assets/images/VOD_WP_7.png',                 label: 'VOD — World Art',      href: 'project-3.html' },
-        { src: 'assets/images/VOD_SC_1.png',                     label: 'VOD — World Art',            href: 'project-3.html' },
-        { src: 'assets/images/VOD_SC_2.png',               label: 'VOD — World Art',              href: 'project-1.html' },
-        { src: 'assets/images/VOD_SC_3.png',             label: 'VOD — World Art',   href: 'project-2.html' },
+        { src: 'assets/images/VOD_WP_3.png',                 label: 'VOD — World Art',      href: 'project-1.html' },
+        { src: 'assets/images/VOD_WP_1.png',                     label: 'VOD — World Art',            href: 'project-1.html' },
+        { src: 'assets/images/VOD_SC_3.png',             label: 'VOD — World Art',   href: 'project-1.html' },
     ];
 
     const N = SLIDES.length;
