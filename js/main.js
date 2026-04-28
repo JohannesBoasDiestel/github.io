@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- SLIDESHOW ---
     const SLIDES = [
-        { src: 'assets/images/VOD_WP_5.png',           label: 'VOD — World Art',        href: 'project-1.html' },
-        { src: 'assets/images/VOD_WP_2.png', label: 'VOD — World Art',   href: 'project-1.html' },
+        { src: 'assets/images/SOTV1.png',           label: 'VOD — World Art',        href: 'project-1.html' },
+        { src: 'assets/images/SOTV2.png', label: 'VOD — World Art',   href: 'project-1.html' },
         { src: 'assets/images/VOD_WP_3.png',                   label: 'VOD — World Art',             href: 'project-1.html' },
         { src: 'assets/images/VOD_WP_4.png',      label: 'VOD — World Art',       href: 'project-1.html' },
         { src: 'assets/images/VOD_WP_1.png',               label: 'VOD — World Art',                href: 'project-1.html' },
